@@ -1,0 +1,204 @@
+:root
+{
+  --shadow:0 1px 5px 	rgb(0, 0, 77);
+}
+
+html
+{
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+body
+{
+  background:#ffffff;
+  margin:30px 50px;
+  line-height:1.4;
+}
+
+img
+{
+  width:100%;
+}
+
+.wrapper
+{
+  display: grid;
+  grid-gap: 20px;
+
+}
+/*nagivation*/
+
+.main-nav ul
+{
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  grid-template-columns: repeat(4,1fr);
+  padding: 0;
+}
+
+.main-nav a
+{
+  text-decoration: none;
+  text-align: center;
+  box-shadow: var(--shadow);
+  display: block;
+  color: black;
+  background:#006bb3;
+  padding:0.8rem;
+}
+
+.main-nav a:hover
+{
+  background:#007acc;
+  color:white;
+}
+
+.top-container
+{
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+.container
+{
+  min-height:200px;
+  background:url("lake.jpeg");
+  background-size:cover;
+  box-shadow:var(--shadow);
+}
+
+.container h1
+{
+  font-size: 5rem;
+  color:white;
+  text-align: center;
+}
+
+.top-box
+{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  'boxes boxes top1'
+  'boxes boxes top2';
+}
+
+.boxes
+{
+  grid-area:boxes;
+  box-shadow: var(--shadow);
+  text-align: center;
+
+
+
+}
+
+.box
+{
+  display:grid;
+  justify-items:center;
+  box-shadow: var(--shadow);
+}
+
+
+.box2
+{
+  grid-area:top1;
+}
+
+.box3
+{
+  grid-area:top2;
+}
+
+
+.pictures
+{
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.image
+{
+  width:100%;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+footer
+{
+  margin-top:2rem;
+  background:#006bb3;
+  text-align: center;
+  padding:1rem;
+  color:black;
+}
+
+  <iframe src="https://www.youtube.com/embed/s_a7AZbJGNM?autoplay=1&mute=1" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+
+.topbox-box
+{
+  display: grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.topbox-box1
+{
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.topbox-box2
+{
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.topbox-box3
+{
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.topbox-box4
+{
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.contact
+{
+  box-shadow:var(--shadow);
+  text-align: center;
+}
+
+@media(max-width:900px)
+{
+  .main-nav ul
+  {
+    grid-template-columns:1fr;
+  }
+
+
+}
+@media(max-width:700px)
+{
+
+  .top-box
+  {
+    grid-template-areas:
+    'boxes'
+    'top1'
+    'top2';
+  }
+
+  .pictures
+  {
+    grid-template-columns:1fr;
+  }
+}
